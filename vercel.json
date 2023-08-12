@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/refresh",
+        "dest": "server.js"
+      },
+      {
+        "src": "/login",
+        "dest": "server.js"
+      }
+    ],
+    "env": {
+      "REDIRECT_URI": "http://localhost:3000",
+      "CLIENT_ID": "85e888a494424dc59098bab22130c04b",
+      "CLIENT_SECRET": "cb8e2f2b3f85472bbc16a1ff49e3f466"
+    }
+  }
+  
